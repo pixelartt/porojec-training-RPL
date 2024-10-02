@@ -1,4 +1,4 @@
-<html></html>
+<html>
  <head>
   <title>
    PROMOSI ORGANISASI
@@ -148,166 +148,150 @@
         .footer .active {
             color: #ff0b0b;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header, .search-bar, .section-title {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header .location {
+                justify-content: center;
+            }
+
+            .carousel .item {
+                min-width: 90%;
+            }
+
+            .recommended .items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recommended .items .item {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header, .search-bar, .section-title, .footer {
+                padding: 10px;
+            }
+
+            .carousel .item {
+                min-width: 100%;
+            }
+
+            .recommended .items .item {
+                width: 100%;
+            }
+
+            .search-bar input {
+                width: 100%;
+            }
+        }
   </style>
  </head>
  <body>
   <div class="header">
    <div class="location">
-    <i class="fas fa-map-marker-alt">
-    </i>
-    <span>
-     Unika santo thomas, MEDAN
-    </span>
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Unika santo thomas, MEDAN</span>
    </div>
    <div class="icons">
-    <i class="fas fa-shopping-cart">
-    </i>
-    <i class="fas fa-bell">
-    </i>
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-bell"></i>
    </div>
   </div>
   <div class="search-bar">
    <input placeholder="Search" type="text"/>
    <div class="icons">
-    <i class="fas fa-qrcode">
-    </i>
-    <i class="fas fa-filter">
-    </i>
+    <i class="fas fa-qrcode"></i>
+    <i class="fas fa-filter"></i>
    </div>
   </div>
   <div class="section-title">
-   <h2>
-    PREMIUM organisasi
-   </h2>
-   <a href="#">
-    See All
-   </a>
+   <h2>PREMIUM organisasi</h2>
+   <a href="#">See All</a>
   </div>
   <div class="carousel">
    <div class="item">
-    <img alt="Woman holding a plant" height="300" src="https://kemahasiswaan.bsi.ac.id/assets/images/berita/258hima-siste20211012140902.jpg" width="600"/>
+    <img alt="Woman holding a plant" src="https://kemahasiswaan.bsi.ac.id/assets/images/berita/258hima-siste20211012140902.jpg"/>
     <div class="overlay">
-     <span>
-     IMKA
-     </span>
-     <h3>
-      PENDAFTARAN SAMPAI 23 DES
-     </h3>
-     <p>
-        Tanpa persayaratan
-     </p>
-     <a class="btn" href="#">
-      GABUNG
-     </a>
+     <span>IMKA</span>
+     <h3>PENDAFTARAN SAMPAI 23 DES</h3>
+     <p>Tanpa persayaratan</p>
+     <a class="btn" href="#">GABUNG</a>
     </div>
    </div>
    <div class="item">
-    <img alt="Woman holding a plant" height="300" src="https://seputarkuliah.com/wp-content/uploads/2023/05/Himpunan-Mahasiswa-Mengenal-Organisasi-Intra-Kampus-750x430.png" width="600"/>
+    <img alt="Woman holding a plant" src="https://seputarkuliah.com/wp-content/uploads/2023/05/Himpunan-Mahasiswa-Mengenal-Organisasi-Intra-Kampus-750x430.png"/>
     <div class="overlay">
-     <span>
-      PEMKAD
-     </span>
-     <h3>
-        PENDAFTARAN SAMPAI 23 DES
-     </h3>
-     <p>
-      Tanpa persayaratan
-     </p>
-     <a class="btn" href="#">
-      GABUNG
-     </a>
+     <span>PEMKAD</span>
+     <h3>PENDAFTARAN SAMPAI 23 DES</h3>
+     <p>Tanpa persayaratan</p>
+     <a class="btn" href="#">GABUNG</a>
     </div>
    </div>
   </div>
   <div class="recommended">
    <div class="section-title">
-    <h2>
-    ORGANISASI ORGANISASI
-    </h2>
-    <a href="#">
-     See All
-    </a>
+    <h2>ORGANISASI ORGANISASI</h2>
+    <a href="#">See All</a>
    </div>
    <div class="filters">
-    <button class="active">
-     All
-    </button>
-    <button>
-     PMKRI
-    </button>
-    <button>
-     KEMKAD
-    </button>
-    <button>
-     PEMKRI
-    </button>
+    <button class="active">All</button>
+    <button>PMKRI</button>
+    <button>KEMKAD</button>
+    <button>PEMKRI</button>
    </div>
    <div class="items">
     <div class="item">
-     <img alt="Monstera Deliciosa plant" height="150" src="https://biobses.com/wp-content/uploads/2019/07/organisasi-dan-arsitektur-komputer-768x1211.png" width="150"/>
-     <p>
-      rate...
-     </p>
+     <img alt="Monstera Deliciosa plant" src="https://biobses.com/wp-content/uploads/2019/07/organisasi-dan-arsitektur-komputer-768x1211.png"/>
+     <p>rate...</p>
      <div class="rating">
-      <i class="fas fa-star">
-      </i>
-      <span>
-       4.9
-      </span>
+      <i class="fas fa-star"></i>
+      <span>4.9</span>
      </div>
     </div>
     <div class="item">
-     <img alt="Calathea Medallion plant" height="150" src="https://4.bp.blogspot.com/-OREKi_wEgoE/UMRlhJlbsrI/AAAAAAAAAmg/9BsvlBptOto/s1600/705329_496777190345340_625320042_o.jpg" width="150"/>
-     <p>
-        rate...
-     </p>
+     <img alt="Calathea Medallion plant" src="https://4.bp.blogspot.com/-OREKi_wEgoE/UMRlhJlbsrI/AAAAAAAAAmg/9BsvlBptOto/s1600/705329_496777190345340_625320042_o.jpg"/>
+     <p>rate...</p>
      <div class="rating">
-      <i class="fas fa-star">
-      </i>
-      <span>
-       4.9
-      </span>
+      <i class="fas fa-star"></i>
+      <span>4.9</span>
      </div>
     </div>
     <div class="item">
-     <img alt="Plant" height="150" src="https://toko-muslim.com/images/product/2023/02/Poster-Struktur-Organisasi-1.jpg" width="150"/>
-     <p>
-        rate...
-     </p>
+     <img alt="Plant" src="https://toko-muslim.com/images/product/2023/02/Poster-Struktur-Organisasi-1.jpg"/>
+     <p>rate...</p>
      <div class="rating">
-      <i class="fas fa-star">
-      </i>
-      <span>
-       4.9
-      </span>
+      <i class="fas fa-star"></i>
+      <span>4.9</span>
      </div>
     </div>
     <div class="item">
-     <img alt="Plant" height="150" src="https://marketplace.canva.com/EAEWj0klKZ4/1/0/566w/canva-poster-promosi-klub-sekolah-saya-pekan-orientasi-bergaris-biru-dan-kuning-FyOzYEZwoiE.jpg" width="150"/>
-     <p>
-        rate...
-     </p>
+     <img alt="Plant" src="https://marketplace.canva.com/EAEWj0klKZ4/1/0/566w/canva-poster-promosi-klub-sekolah-saya-pekan-orientasi-bergaris-biru-dan-kuning-FyOzYEZwoiE.jpg"/>
+     <p>rate...</p>
      <div class="rating">
-      <i class="fas fa-star">
-      </i>
-      <span>
-       4.9
-      </span>
+      <i class="fas fa-star"></i>
+      <span>4.9</span>
      </div>
     </div>
    </div>
   </div>
   <div class="footer">
-   <i class="fas fa-home active">
-   </i>
-   <i class="fas fa-search">
-   </i>
-   <i class="fas fa-heart">
-   </i>
-   <i class="fas fa-comments">
-   </i>
-   <i class="fas fa-user">
-   </i>
+   <i class="fas fa-home active"></i>
+   <i class="fas fa-search"></i>
+   <i class="fas fa-heart"></i>
+   <i class="fas fa-comments"></i>
+   <i class="fas fa-user"></i>
   </div>
  </body>
 </html>
