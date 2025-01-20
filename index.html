@@ -1,298 +1,194 @@
-<html>
+<html lang="en">
  <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   PROMOSI ORGANISASI
+   RESVENTURE CLUB
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://cdn.tailwindcss.com">
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F5F5F5;
-        }
-        .header {
-            background-color: #ff0000;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header .location {
-            display: flex;
-            align-items: center;
-        }
-        .header .location i {
-            margin-right: 5px;
-        }
-        .header .icons {
-            display: flex;
-            align-items: center;
-        }
-        .header .icons i {
-            margin-left: 15px;
-        }
-        .search-bar {
-            background-color: #E8F5E9;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .search-bar input {
-            width: 80%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-        .search-bar .icons i {
-            margin-left: 10px;
-        }
-        .section-title {
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .section-title h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-        .section-title a {
-            color: #ff0909;
-            text-decoration: none;
-        }
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            padding: 0 20px;
-        }
-        .carousel img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .carousel .item {
-            min-width: 80%;
-            margin-right: 10px;
-            position: relative;
-        }
-        .carousel .item .overlay {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: white;
-        }
-        .carousel .item .overlay .btn {
-            background-color: #ff0707;
-            color: black;
-            padding: 5px 10px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .recommended {
-            padding: 20px;
-        }
-        .recommended .filters {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .recommended .filters button {
-            background-color: #E8F5E9;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        .recommended .filters .active {
-            background-color: #ff0000;
-            color: white;
-        }
-        .recommended .items {
-            display: flex;
-            justify-content: space-between;
-        }
-        .recommended .items .item {
-            background-color: white;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-            width: 23%;
-        }
-        .recommended .items .item img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .recommended .items .item .rating {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 5px;
-        }
-        .recommended .items .item .rating i {
-            color: #ff0000;
-            margin-right: 5px;
-        }
-        .footer {
-            background-color: white;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-around;
-            border-top: 1px solid #E0E0E0;
-        }
-        .footer i {
-            color: #9E9E9E;
-        }
-        .footer .active {
-            color: #ff0b0b;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .header, .search-bar, .section-title {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .header .location {
-                justify-content: center;
-            }
-
-            .carousel .item {
-                min-width: 90%;
-            }
-
-            .recommended .items {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .recommended .items .item {
-                width: 90%;
-                margin-bottom: 10px;
-            }
-
-            .footer {
-                flex-direction: column;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header, .search-bar, .section-title, .footer {
-                padding: 10px;
-            }
-
-            .carousel .item {
-                min-width: 100%;
-            }
-
-            .recommended .items .item {
-                width: 100%;
-            }
-
-            .search-bar input {
-                width: 100%;
-            }
+            font-family: 'Roboto', sans-serif;
         }
   </style>
  </head>
- <body>
-  <div class="header">
-   <div class="location">
-    <i class="fas fa-map-marker-alt"></i>
-    <span>Unika santo thomas, MEDAN</span>
-   </div>
-   <div class="icons">
-    <i class="fas fa-shopping-cart"></i>
-    <i class="fas fa-bell"></i>
-   </div>
-  </div>
-  <div class="search-bar">
-   <input placeholder="Search" type="text"/>
-   <div class="icons">
-    <i class="fas fa-qrcode"></i>
-    <i class="fas fa-filter"></i>
-   </div>
-  </div>
-  <div class="section-title">
-   <h2>PREMIUM organisasi</h2>
-   <a href="#">See All</a>
-  </div>
-  <div class="carousel">
-   <div class="item">
-    <img alt="Woman holding a plant" src="https://kemahasiswaan.bsi.ac.id/assets/images/berita/258hima-siste20211012140902.jpg"/>
-    <div class="overlay">
-     <span>IMKA</span>
-     <h3>PENDAFTARAN SAMPAI 23 DES</h3>
-     <p>Tanpa persayaratan</p>
-     <a class="btn" href="#">GABUNG</a>
+ <body class="bg-gray-100">
+  <header class="bg-red-800 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Harvard University logo" class="h-12 w-12 mr-4" src="img/logo1.png"/>
+     <img alt="Harvard University secondary logo" class="h-12 w-12 mr-4" src="img/logo2.png"/>
+     <img alt="Harvard University tertiary logo" class="h-12 w-12 mr-4" src="img/th.jpeg"/>
+     <h1 class="text-3xl font-bold">
+      RESVENTURE CLUB
+
+     </h1>
+    </div>
+    <div class="text-right">
+     <button class="text-white focus:outline-none">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
     </div>
    </div>
-   <div class="item">
-    <img alt="Woman holding a plant" src="https://seputarkuliah.com/wp-content/uploads/2023/05/Himpunan-Mahasiswa-Mengenal-Organisasi-Intra-Kampus-750x430.png"/>
-    <div class="overlay">
-     <span>PEMKAD</span>
-     <h3>PENDAFTARAN SAMPAI 23 DES</h3>
-     <p>Tanpa persayaratan</p>
-     <a class="btn" href="#">GABUNG</a>
+  </header>
+  <div class="hero bg-red-800 text-white py-20 flex items-center">
+   <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="text-left md:w-1/2">
+     <h2 class="text-4xl font-bold mb-4">
+      Welcome to resventure club
+     </h2>
+     <p class="text-xl">
+      Empowering leaders of tomorrow through world-class education.
+     </p>
+     <p class="text-lg mt-4">
+      We prepare and propel leaders to achieve the next elevation—for their organizations and for themselves.
+     </p>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+     <img alt="Harvard University gate with historic architecture" class="w-full h-64 object-cover rounded-lg" src="img/image1.jpg"/>
     </div>
    </div>
   </div>
-  <div class="recommended">
-   <div class="section-title">
-    <h2>ORGANISASI ORGANISASI</h2>
-    <a href="#">See All</a>
-   </div>
-   <div class="filters">
-    <button class="active">All</button>
-    <button>PMKRI</button>
-    <button>KEMKAD</button>
-    <button>PEMKRI</button>
-   </div>
-   <div class="items">
-    <div class="item">
-     <img alt="Monstera Deliciosa plant" src="https://biobses.com/wp-content/uploads/2019/07/organisasi-dan-arsitektur-komputer-768x1211.png"/>
-     <p>rate...</p>
-     <div class="rating">
-      <i class="fas fa-star"></i>
-      <span>4.9</span>
+  <div class="container mx-auto py-8">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="Students in a classroom engaged in academic activities" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/2mJRXw876TagHN5KVfhbfNNU9w9ZUy4qkQ0NJFpiQFRK6AHUA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Academic Excellence
+      </h3>
+      <p class="text-gray-600">
+       Explore our diverse programs designed to inspire and challenge students.
+      </p>
      </div>
     </div>
-    <div class="item">
-     <img alt="Calathea Medallion plant" src="https://4.bp.blogspot.com/-OREKi_wEgoE/UMRlhJlbsrI/AAAAAAAAAmg/9BsvlBptOto/s1600/705329_496777190345340_625320042_o.jpg"/>
-     <p>rate...</p>
-     <div class="rating">
-      <i class="fas fa-star"></i>
-      <span>4.9</span>
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="A diverse group of students interacting on campus" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/8KbuJiqYGG72KNm5PepyqWqHRHnjIrjNpT2bJ0LBTi4FdgDKA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Global Community
+      </h3>
+      <p class="text-gray-600">
+       Join a vibrant and diverse community of learners from around the globe.
+      </p>
      </div>
     </div>
-    <div class="item">
-     <img alt="Plant" src="https://toko-muslim.com/images/product/2023/02/Poster-Struktur-Organisasi-1.jpg"/>
-     <p>rate...</p>
-     <div class="rating">
-      <i class="fas fa-star"></i>
-      <span>4.9</span>
-     </div>
-    </div>
-    <div class="item">
-     <img alt="Plant" src="https://marketplace.canva.com/EAEWj0klKZ4/1/0/566w/canva-poster-promosi-klub-sekolah-saya-pekan-orientasi-bergaris-biru-dan-kuning-FyOzYEZwoiE.jpg"/>
-     <p>rate...</p>
-     <div class="rating">
-      <i class="fas fa-star"></i>
-      <span>4.9</span>
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="Researchers working in a laboratory setting" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/92KxNn6KPVZ1PNWpoPlSlMi2n59g2plALv8xVCCnT4YjOwBF.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Research Opportunities
+      </h3>
+      <p class="text-gray-600">
+       Engage in groundbreaking research with world-renowned faculty.
+      </p>
      </div>
     </div>
    </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     New Title
+    </h2>
+    <div class="flex overflow-x-scroll space-x-4 mt-4">
+     <div class="flex-shrink-0">
+      <img alt="Harvard campus building with students walking" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <h3 class="text-lg font-bold mt-2">
+       Campus Life
+      </h3>
+      <p class="text-gray-600">
+       Harvard campus building with students walking.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard library interior with students studying" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <h3 class="text-lg font-bold mt-2">
+       Library
+      </h3>
+      <p class="text-gray-600">
+       Harvard library interior with students studying.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard sports field with students playing" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <h3 class="text-lg font-bold mt-2">
+       Sports
+      </h3>
+      <p class="text-gray-600">
+       Harvard sports field with students playing.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard dormitory building with students socializing" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <h3 class="text-lg font-bold mt-2">
+       Dormitory
+      </h3>
+      <p class="text-gray-600">
+       Harvard dormitory building with students socializing.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard lecture hall with professor teaching" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <h3 class="text-lg font-bold mt-2">
+       Lecture Hall
+      </h3>
+      <p class="text-gray-600">
+       Harvard lecture hall with professor teaching.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Another New Title
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+     <div>
+      <h3 class="text-xl font-bold mb-2">
+       Left Section Title
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Lorem ipsum dolor sit amet, 
+      </p>
+     </div>
+     <div>
+      <h3 class="text-xl font-bold mb-2">
+       Right Section Title
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Lorem ipsum dolor sit amet, 
+      </p>
+     </div>
+    </div>
+   </div>
   </div>
-  <div class="footer">
-   <i class="fas fa-home active"></i>
-   <i class="fas fa-search"></i>
-   <i class="fas fa-heart"></i>
-   <i class="fas fa-comments"></i>
-   <i class="fas fa-user"></i>
-  </div>
+  <footer class="bg-gray-800 text-white p-4 mt-8">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2025 Harvard Education. All rights reserved.
+    </p>
+    <div class="mt-4">
+     <a class="text-white hover:text-gray-400 mx-2" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
  </body>
 </html>
