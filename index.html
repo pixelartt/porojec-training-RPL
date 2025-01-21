@@ -7,8 +7,14 @@
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
+  <div class="card bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <meta name="description" content="Welcome to Resventure Club - Empowering leaders through education.">
+  <meta name="keywords" content="Resventure Club, Education, Leadership, Community">
+  <meta name="author" content="rafael">
+
   <style>
    body {
             font-family: 'Roboto', sans-serif;
@@ -19,21 +25,44 @@
   <header class="bg-red-800 text-white p-4">
    <div class="container mx-auto flex justify-between items-center">
     <div class="flex items-center">
-     <img alt="Harvard University logo" class="h-12 w-12 mr-4" src="img/logo1.png"/>
-     <img alt="Harvard University secondary logo" class="h-12 w-12 mr-4" src="img/logo2.png"/>
-     <img alt="Harvard University tertiary logo" class="h-12 w-12 mr-4" src="img/th.jpeg"/>
+     <img alt="Harvard University logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="img/logo1.png" width="64"/>
+     <img alt="Harvard University secondary logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="img/logo2.png" width="64"/>
+     <img alt="Harvard University tertiary logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="img/th.jpeg" width="64"/>
      <h1 class="text-3xl font-bold">
       RESVENTURE CLUB
-
      </h1>
     </div>
     <div class="text-right">
-     <button class="text-white focus:outline-none">
+     <button class="text-white focus:outline-none" id="hamburger-button">
       <i class="fas fa-bars text-2xl">
       </i>
      </button>
     </div>
    </div>
+   <nav class="hidden mt-4" id="mobile-menu">
+    <ul class="space-y-2">
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
+       Services
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <div class="hero bg-red-800 text-white py-20 flex items-center">
    <div class="container mx-auto flex flex-col md:flex-row items-center">
@@ -49,14 +78,14 @@
      </p>
     </div>
     <div class="md:w-1/2 mt-8 md:mt-0">
-     <img alt="Harvard University gate with historic architecture" class="w-full h-64 object-cover rounded-lg" src="img/image1.jpg"/>
+     <img alt="Harvard University gate with historic architecture" class="w-full h-64 object-cover rounded-lg" height="400" src="img/image1.jpg" width="600"/>
     </div>
    </div>
   </div>
   <div class="container mx-auto py-8">
    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <div class="card bg-white rounded-lg shadow">
-     <img alt="Students in a classroom engaged in academic activities" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/2mJRXw876TagHN5KVfhbfNNU9w9ZUy4qkQ0NJFpiQFRK6AHUA.jpg" width="300"/>
+     <img alt="Students in a classroom engaged in academic activities" class="w-full h-48 object-cover rounded-t-lg" height="200" src="img/image2.jpg" width="300"/>
      <div class="p-4">
       <h3 class="text-xl font-bold mb-2">
        Academic Excellence
@@ -67,7 +96,7 @@
      </div>
     </div>
     <div class="card bg-white rounded-lg shadow">
-     <img alt="A diverse group of students interacting on campus" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/8KbuJiqYGG72KNm5PepyqWqHRHnjIrjNpT2bJ0LBTi4FdgDKA.jpg" width="300"/>
+     <img alt="A diverse group of students interacting on campus" class="w-full h-48 object-cover rounded-t-lg" height="200" src="img/image3.jpg" width="300"/>
      <div class="p-4">
       <h3 class="text-xl font-bold mb-2">
        Global Community
@@ -78,7 +107,7 @@
      </div>
     </div>
     <div class="card bg-white rounded-lg shadow">
-     <img alt="Researchers working in a laboratory setting" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/92KxNn6KPVZ1PNWpoPlSlMi2n59g2plALv8xVCCnT4YjOwBF.jpg" width="300"/>
+     <img alt="Researchers working in a laboratory setting" class="w-full h-48 object-cover rounded-t-lg" height="200" src="img/image2.jpg" width="300"/>
      <div class="p-4">
       <h3 class="text-xl font-bold mb-2">
        Research Opportunities
@@ -95,7 +124,7 @@
     </h2>
     <div class="flex overflow-x-scroll space-x-4 mt-4">
      <div class="flex-shrink-0">
-      <img alt="Harvard campus building with students walking" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <img alt="Harvard campus building with students walking" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/qDKbe75I3FSgfkRUUbxVt0p7AaIaJeb4QZ4zFXCfRJENYAdQB.jpg" width="300"/>
       <h3 class="text-lg font-bold mt-2">
        Campus Life
       </h3>
@@ -104,7 +133,7 @@
       </p>
      </div>
      <div class="flex-shrink-0">
-      <img alt="Harvard library interior with students studying" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <img alt="Harvard library interior with students studying" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/DqZfHWobNrRRCCnVlt9KhIbATV063Tyfs65qn3xEmXALGQHUA.jpg" width="300"/>
       <h3 class="text-lg font-bold mt-2">
        Library
       </h3>
@@ -113,7 +142,7 @@
       </p>
      </div>
      <div class="flex-shrink-0">
-      <img alt="Harvard sports field with students playing" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <img alt="Harvard sports field with students playing" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/Cqj94EWeyfvrPECGhtaGh6S9QL8fqUmBJ4RM865IQeL8YAdQB.jpg" width="300"/>
       <h3 class="text-lg font-bold mt-2">
        Sports
       </h3>
@@ -122,7 +151,7 @@
       </p>
      </div>
      <div class="flex-shrink-0">
-      <img alt="Harvard dormitory building with students socializing" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <img alt="Harvard dormitory building with students socializing" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/ybnkdZTZZqaYM1qSO7AZVi8JuQf5TByUjtnTW5ShcXJDDoDKA.jpg" width="300"/>
       <h3 class="text-lg font-bold mt-2">
        Dormitory
       </h3>
@@ -131,7 +160,7 @@
       </p>
      </div>
      <div class="flex-shrink-0">
-      <img alt="Harvard lecture hall with professor teaching" class="h-48 w-64 object-cover rounded-lg" src="https://via.placeholder.com/300x200"/>
+      <img alt="Harvard lecture hall with professor teaching" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/XNgzfAZbT0Uucq8g7hEJcrm9vxwn4mX5upUoXmvNuHXGDoDKA.jpg" width="300"/>
       <h3 class="text-lg font-bold mt-2">
        Lecture Hall
       </h3>
@@ -151,7 +180,7 @@
        Left Section Title
       </h3>
       <p class="text-gray-600 mb-4">
-       Lorem ipsum dolor sit amet, 
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
       </p>
      </div>
      <div>
@@ -159,18 +188,80 @@
        Right Section Title
       </h3>
       <p class="text-gray-600 mb-4">
-       Lorem ipsum dolor sit amet, 
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
       </p>
      </div>
     </div>
    </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Additional Information
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University event with students participating" class="w-full h-48 object-cover rounded-t-lg" height="200" src="img/image2.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Student Events
+       </h3>
+       <p class="text-gray-600">
+        Participate in various events and activities organized by the university.
+       </p>
+      </div>
+     </div>
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University alumni gathering" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/2.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Alumni Network
+       </h3>
+       <p class="text-gray-600">
+        Connect with a vast network of alumni across various industries.
+       </p>
+      </div>
+     </div>
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University campus with autumn leaves" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/3.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Beautiful Campus
+       </h3>
+       <p class="text-gray-600">
+        Enjoy the scenic beauty of our historic campus.
+       </p>
+      </div>
+     </div>
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University students in a study group" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/4.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Study Groups
+       </h3>
+       <p class="text-gray-600">
+        Collaborate with peers in study groups to enhance learning.
+       </p>
+      </div>
+     </div>
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University professor giving a lecture" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/5.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Expert Faculty
+       </h3>
+       <p class="text-gray-600">
+        Learn from world-renowned faculty members.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
   </div>
-  <footer class="bg-gray-800 text-white p-4 mt-8">
-   <div class="container mx-auto text-center">
+  <footer class="bg-black text-white p-4 mt-8">
+   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
     <p>
      © 2025 Harvard Education. All rights reserved.
     </p>
-    <div class="mt-4">
+    <div class="mt-4 md:mt-0 flex space-x-2">
      <a class="text-white hover:text-gray-400 mx-2" href="#">
       <i class="fab fa-facebook-f">
       </i>
@@ -189,6 +280,30 @@
      </a>
     </div>
    </div>
+   <div class="container mx-auto mt-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+    <p>
+     <strong>Contact:</strong>
+    </p>
+    <p>
+     <strong>Location:</strong>
+    </p>
+    <p>
+     <strong>Business Hours:</strong>
+    <p>
+     <strong>Email:</strong>
+    </p>
+   </div>
   </footer>
+  <script>
+   document.getElementById('hamburger-button').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+  </script>
  </body>
 </html>
+
